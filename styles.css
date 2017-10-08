@@ -1,0 +1,9 @@
+h1{font-size:x-large;font-weight:bold;}
+h2{font-size:large;font-weight:bolder;}
+h3{text-decoration:line-through;font-style:italic;font-family:monospace;}
+address{font-style:normal;font-weight:bold;color:blue}
+body cite,em{color:green;}
+a:hover{color:#ffa644d}
+a:active{color:#ffa64d}
+h1{border:solid 2px red;}
+div#2{display:block;border:solid red;boder-width:2px 4px 6px 8px;padding:10px;margin:10px;}

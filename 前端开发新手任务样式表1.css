@@ -1,0 +1,482 @@
+.float_left{float:left;}
+.float_right{float:right;}/*控制浮动*/
+body{
+	width:900px;
+	height:1386px;
+	margin:0 auto;/*使左右margin相同*/
+	padding:0;
+}/*调整页面*/
+
+
+header{
+	height: 63px;
+	border-bottom:solid 2px gray;
+}/*???对此保留疑问？？？*/
+header div{
+	width: 110px;
+    height: 65px;
+    background-color:rgba(255,0,0,0.5);
+}
+header div p{
+	padding:0;
+	position:relative;
+	top:25px;
+	left:3px;
+	color:rgba(255,255,255,1);
+	font-size:12px;
+	font-family:Microsoft YaHei;
+}
+.Top_font{
+	padding:0;
+	position:relative;
+	top:30px;
+	left:auto;
+	color:rgba(255,0,0,0.5);
+	font-size:12px;
+	font-family:Microsoft YaHei;
+} 
+/* header */
+
+
+main{
+	margin-top:30px;
+}
+.article1 {
+    position: relative;
+}
+.article1:before,
+.article1:after {
+content: "";
+display: table;
+}
+.article1:after {
+clear: both;
+}/*:before和:after的作用就是在指定的元素内容（而不是元素本身）之前或者之后插入一个包含content属性指定内容的行内元素*/
+
+
+.part1{
+	width: 641px;
+    height: 301px;
+    background: url('http://img.hb.aicdn.com/89c1fdd6fbace7106e0d0a5c5e65b3ec051780113bd81-5iXIXr_fw658');
+    position: relative;
+}/*相对定位*/
+.transparent1 {
+    width: 191px;
+    height: 301px;
+    background-color: #9bbea0;
+    position: absolute;
+    left: 0;
+    opacity:0.6;/*不透明度属性，相当于alpha通道*/
+}
+.transparent2 {
+    width: 191px;
+    height: 301px;
+    background-color: #e4b7b6;
+    position: absolute;
+    right: 0;
+    opacity:0.6;
+}/*绝对定位absolute是以已定位的祖父元素为基准的*/
+
+
+.part2{
+	width: 203px;
+    border-top: solid 2px gray;
+}
+.para1 {
+    font-size: 18px;
+    color: #000000;
+    line-height: 18px;
+    font-family: Microsoft YaHei;
+    text-transform: uppercase;/*小写变大写*/
+    text-decoration: underline;/*插入下划线*/
+    letter-spacing: -1px;/*改变字符间距*/
+}
+.paradistinct8 {
+    margin: 0;
+    padding: 8px 0 0 0;
+}/*运用内间距改变行距*/
+.para1:first-letter {
+    font-size: 1.5em;
+}/*使用伪类进一步改变样式*/
+.para2{
+	font-size:12px;
+	line-height: 8px;/*直接改变行距，分别加到一个文本行内容的顶部和底部*/
+    font-family: "楷体","楷体_GB2312";
+}
+.paradistinct2{
+	margin: 0;
+    padding: 2px 0 0 0;
+}/*运用内间距改变行距*/
+.para3 {
+    font-size: 53px;
+    color: #676767;
+    line-height: 100px;
+    font-family: Microsoft YaHei;
+    font-style: oblique;
+    margin: 30px 0 0 0;
+    padding: 0;
+    position: relative;
+}
+.para4 {
+    position: relative;
+}/*将盒子设定为相对定位，以便子元素的定位*/
+.para4 p {
+    color: #cc8091;
+    font-family: Microsoft YaHei;
+    margin: 0;
+    padding: 0;
+    display: inline;/*变更为行内显示*/
+}
+.t1 {
+    font-size:60px;
+	float:left;
+	position: relative;
+	top:-10px;
+}
+.t2 {
+    font-size:21px;
+    position: relative;
+    top: 0px;
+	clear:both;
+}
+.t3 {
+    font-size:12px;
+    position: relative;
+    left:-0px;
+	clear:both;
+}
+
+
+
+.part3{
+	top: 320px;
+    width: 641px;
+    display: -webkit-flex; /* Safari，该属性似乎无效果，ＩＥ不支持 */
+    display: flex;/*flex容器*/
+    flex-wrap: nowrap;/*改为单行显示*/
+    justify-content: flex-start;/*justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式*/
+}
+.WWH {
+    width: 33.3%;/*统一每个盒子的宽*/
+    margin: 30px 30px 30px 0;
+}
+.common_para_title {
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: bolder;
+    text-decoration: underline;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+.what {
+    color: #418c59;
+
+}
+.what_bottom {
+    font-size: 12px;
+    color: #767777;
+    font-family: "宋体";
+}
+.when {
+    color: #d2994f;
+}
+.when_bottom {
+    font-size: 12px;
+    color: #231815;
+    font-family: "微软雅黑";
+    opacity: 0.7;
+}
+.how {
+    color: #cc7680;
+}
+.how_bottom {
+    font-size: 12px;
+    color: #cd4a48;
+    font-family: "微软雅黑";
+    opacity: 0.7;
+}
+/*article1结束*/
+
+
+
+.article2{
+	width: 100%;
+    margin-bottom: 25px;
+}
+/*调整页面*/
+.bottom_left {
+    position: relative;
+    width: 415px;
+    margin: 0 19px 0 0;
+    float: left;
+}
+/*左浮动*/
+.article2:before,
+.article2:after {
+content: "";
+display: table;
+}
+.article2:after {
+clear: both;
+}
+/*清除浮动影响*/
+.blt {
+    padding-bottom: 10px;
+    border-bottom: solid 2px #11456b;
+}
+.blt_the {
+    font-size: 72px;
+    color: #f5e327;
+    font-family: "黑体";
+    font-weight: bolder;
+    font-style: oblique;
+    line-height: 72px;
+}
+.blt_te_1 {
+    font-size: 42px;
+    color: #11456b;
+    font-family: "黑体";
+    font-weight: bolder;
+    letter-spacing: -2px;/*调整字符间距*/
+}
+.blt_te_2 {
+    font-size: 42px;
+    color: #11456b;
+    font-family: "黑体";
+    font-weight: bolder;
+    margin-bottom: 16px;
+    line-height: 16px;
+}
+.blt_cn {
+    font-size: 33px;
+    color: #11456b;
+    font-family: "黑体";
+    font-weight: bolder;
+    margin: 0;
+}
+
+.blb {
+    position: relative;
+    padding-top: 10px;
+}
+.one {
+    position: relative;
+}
+
+.one:before,
+.one:after {
+content: "";
+display: table;
+}
+/*清除浮动*/
+.one:after {
+clear: both;
+}
+.qian {
+    font-size: 70px;
+    color: #f5e327;
+    font-family: "微软雅黑";
+    float: left;
+    line-height: 70px;
+    display: inline-block;
+}
+.qianduan {
+    font-size: 12px;
+    color: #767777;
+    font-family: "微软雅黑";
+    line-height: 16px;
+    display: block;
+}.two {
+    position: relative;
+}
+.blimg {
+    height: 270px;
+    width: 120px;
+    background: url('http://img.hb.aicdn.com/9174ac0ba828c7a493fb3b7dd568421dcfe3355227d19-1Q6ayh_fw658') center;
+    margin: 15px 0 15px 15px;
+    padding: 0;
+    float: right;
+}
+/*底端左盒结束*/
+
+.bottom_right {
+    position: relative;
+    width: 458px;
+    margin: 0;
+    float: right;
+}
+
+.brt {
+    width: 458px;
+    height: 275px;
+    background: url('http://img.hb.aicdn.com/b3dfe4004431d7e4300f9a03b99534c3bd95cd8542fae-6CvdOP_fw658') center;
+    position: relative;
+}
+
+.fonthome {
+    width: 100%;
+    height: 61px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(228,183,182,0.6);
+}
+.fontinner {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 44px;
+    border-left: solid 3px #72b16a;
+    padding-left: 10px;
+}
+.span1 {
+    font-size: 26px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+}
+.span2 {
+    font-size: 12px;
+    color: #72b16a;
+    font-family: "微软雅黑";
+    font-style: oblique;
+}
+.graybox {
+    height: 318px;
+    width: 100%;
+    background-color: #eeedd6;
+    margin-top: 25px;
+}
+/*结束*/
+.graybox:before,
+.graybox:after {
+content: "";
+display: table;
+}
+.graybox:after {
+clear: both;
+}
+/*
+*    清除浮动
+*/
+.threepara {
+    font-size: 16px;
+    color: #5a5b5b;
+    font-family: "宋体";
+    margin: 20px 15px 0 15px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.threepara p {
+    display: inline-block;
+    margin: 12px 0;
+}
+
+.threepara span {
+    font-size: 12px;
+    color: #5a5b5b;
+    font-family: "宋体";
+    font-style: oblique;
+
+}
+
+.triangle_border_up{
+    width:0;
+    height:0;
+    border-width:0 9px 9px;
+    border-style:solid;
+    border-color:transparent transparent #333;/*透明 透明  灰*/
+    margin:0 5px 0 0;
+    position:relative;
+    display: inline-block;
+}
+/*灰盒结束*/
+
+.redbox {
+    width: 260px;
+    height: 160px;
+    background-color: #d45d5c;
+    position: absolute;
+    left: 0;
+    top:459px;
+}
+/*
+*    红色盒子
+*/
+
+.hello {
+    margin: 10px 15px 0 15px;
+    float: right;
+    width: 168px;
+    height: 160px;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.world {
+    font-size: 14px;
+    color: #5a5b5b;
+    font-family: "黑体";
+    font-style: oblique;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.style2 {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+.zero {
+    font-size:110px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+    margin-left: 5px;
+    float: left;
+}
+
+.other {
+    position: absolute;
+    height: 86px;
+    border-left: solid 2px #ffffff;
+    padding: 1px;
+    top: 42px;
+    left: 74px;
+    padding-left: 5px;
+}
+.other p {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: "黑体";
+    font-style: oblique;
+    line-height: 18px;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.other .world2 {
+    font-size: 12px;
+    color: #ffffff;
+    padding-bottom: 6px;
+    line-height: 6px;
+}
+
+
+/*
+* footer
+*/
+
+footer hr {
+    width: 892px;
+    height: 1px;
+    background-color: #938e8c;
+    position: relative;
+    margin: 0;
+}
+
+.mrg0 {
+    margin: 0;
+}
+
+
